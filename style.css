@@ -83,7 +83,7 @@ button{
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    border: solid .15rem #fff;
+    border: solid .25rem #fff;
 }
 @media (min-width: 660px) {
     main{
