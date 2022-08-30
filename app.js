@@ -7,11 +7,11 @@ const result = document.querySelector('#result')
 const btn = document.querySelector('button')
 
 //Converting values to meters
-const feetInMeters = () => (feet.value / 3.28084)
-const feetInInches = () => (inches.value * 0.0254)
+const heightInMeters = () => (feet.value / 3.28084)
+const heightInInches = () => (inches.value * 0.0254)
 
 //Adding converted values and squaring it
-const totalHeight = () => (feetInMeters() + feetInInches())**2
+const totalHeight = () => (heightInMeters() + heightInInches())**2
 
 //Calculating BMI and assigning the result
 const calculate = () => result.textContent = weight.value / totalHeight()
