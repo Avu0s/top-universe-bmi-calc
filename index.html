@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Top Universe BMI Calculator</title>
+</head>
+<body>
+    <main>
+        <section class="bg">
+            <div><img src="img/rodion.jpg" alt="" class="avatar"></div>
+            <span>TOP UNIVERSE BMI CALCULATOR</span>
+        </section>
+        <section class="form-div">
+            <form onsubmit="return false">
+                <div>
+                    <label for="feet">Height (Feet)</label>
+                    <input type="number" name="feet" id="feet" required>
+                </div>
+                <div>
+                    <label for="inches">Height (Inches)</label>
+                    <input type="number" name="inches" id="inches" required>
+                </div>
+                <div>
+                    <label for="weight">Weight (Kg.)</label>
+                    <input type="number" name="weight" id="weight" required>
+                </div>
+                <div>
+                    <label for="sex">Gender</label>
+                    <input type="text" name="sex" id="sex">
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" required>
+                </div>
+                <span id="result">BMI RESULT</span>
+                <button>Calculate BMI</button>
+            </form>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

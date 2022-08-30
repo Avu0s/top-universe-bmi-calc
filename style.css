@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+main{
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-div{
+    display: grid;
+    place-items: center;
+    background: #fafafa;
+    padding: 1.5rem 0;
+}
+form{
+    width: 90%;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px 1px rgba(34, 34, 34, 0.1);
+    background: #fff;
+}
+form > div{
+    min-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    padding: 0 1rem;
+    height: 3rem;
+    width: 66%;
+    border: solid .1rem rgba(153, 153, 153, 0.2);
+    border-radius: .5rem;
+    box-shadow: 0 1px 1px rgba(34, 34, 34, 0.05);
+}
+input:focus{
+    outline: none;
+}
+button{
+    width: 80%;
+    padding: 1rem 0;
+    border: none;
+    background: linear-gradient(to bottom, skyblue, #15aaff);
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 4px 1px rgba(34, 34, 34, 0.1);
+    cursor: pointer;
+}
+#result{
+    font-weight: bold;
+    color: rgba(153, 153, 153);
+    font-size: 1.5rem;
+}
+.bg{
+    background: #222;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.avatar{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid .15rem #fff;
+}
+@media (min-width: 660px) {
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    form > div {
+        flex-direction: row;
+        width: 60%;
+    }
+    form{
+        width: 80%;
+    }
+}
