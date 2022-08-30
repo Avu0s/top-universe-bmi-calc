@@ -68,7 +68,7 @@ button{
     font-size: 1.5rem;
 }
 .bg{
-    background: #222;
+    background-image: url('img/docsth.jpg');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
