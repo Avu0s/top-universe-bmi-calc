@@ -27,9 +27,9 @@ const imperial = () => 703 * weightInPounds() / totalInches()
 
 //Fn to get the result and display
 const calculate = () => {
-    if(!feet.value || !inches.value || !weight.value){
+    if (!feet.value || !inches.value || !weight.value) {
         alert('You must have values for \n\ Height & Weight')
-    }else{
+    } else {
         metricRes.textContent = `Metric: ${+metric().toFixed(2)}`;
         imperialRes.textContent = `Imperial: ${+imperial().toFixed(2)}`;
         showText.classList.toggle('hidden')
