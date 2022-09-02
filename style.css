@@ -58,12 +58,20 @@ button {
   width: 80%;
   padding: 1rem 0;
   border: none;
-  background: linear-gradient(to bottom, skyblue, #15aaff);
+  background: linear-gradient(to bottom, rgb(122, 214, 250), #0aa3fc);
   border-radius: 0.5rem;
   color: #fff;
   font-size: 1.25rem;
   box-shadow: 0 2px 4px 1px rgba(34, 34, 34, 0.1);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: linear-gradient(to bottom, #54ccf1, #119dee);
+  box-shadow: 0 12px 12px 0 rgba(34, 34, 34, 0.2);
+}
+button:active {
+  transform: translateY(0.5rem);
 }
 #result {
   font-weight: bold;
