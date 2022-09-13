@@ -6,7 +6,6 @@ const weight = document.querySelector('#weight')
 const metricRes = document.querySelector('#metric')
 const imperialRes = document.querySelector('#imperial')
 const btn = document.querySelector('button')
-const showText = document.querySelector('.hidden')
 
 //Converting values to meters & lbs
 const heightInMeters = () => (feet.value / 3.28084)
@@ -32,7 +31,7 @@ const calculate = () => {
     } else {
         metricRes.textContent = `Metric: ${+metric().toFixed(2)}`;
         imperialRes.textContent = `Imperial: ${+imperial().toFixed(2)}`;
-        showText.classList.toggle('hidden')
+        imperialRes.classList.toggle('hidden')
     }
 }
 
