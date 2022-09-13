@@ -1,0 +1,7 @@
+UI implementation is great.
+JS function is pretty neet. [work on code documentation/comments next time]
+CSS file is also neet
+You did not handle error scenarios. e.g if someone passes a string instead of a number value.
+You can add your css and js to a folder next time.
+
+Well done.
